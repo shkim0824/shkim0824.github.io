@@ -23,7 +23,7 @@ nav a { font-size: .9rem; color: var(--muted); text-decoration: none; }
 h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.65rem; font-weight: 400; letter-spacing: -.045em; line-height: 1.13; margin: 0; }
 .role { margin: 16px 0 10px; line-height: 1.75; }
 .role a { text-decoration: none; }
-.contact-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 12px; font-size: .875rem; }
+.contact-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 12px; margin-top: 22px; font-size: .875rem; }
 .contact-links a { text-decoration: none; overflow-wrap: anywhere; }
 .contact-links span { color: var(--muted); }
 section { scroll-margin-top: 28px; }
@@ -32,16 +32,17 @@ h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; font-we
 p { margin: 0 0 16px; }
 p:last-child { margin-bottom: 0; }
 strong { font-weight: 600; }
-.publication h3 { line-height: 1.55; margin-bottom: 12px; }
+.publication h3 { line-height: 1.5; margin-bottom: 6px; }
 .publication + .publication { margin-top: 30px; }
-.publication p { margin: 0 0 9px; }
-.authors { font-size: .9rem; line-height: 1.8; }
+.publication p { margin: 0 0 2px; line-height: 1.5; }
+.publication p:last-child { margin-bottom: 0; }
+.authors { font-size: .9rem; }
 .venue { color: var(--blue); font-size: .9rem; }
 .contribution { color: var(--muted); }
 .contribution { font-size: .8rem; }
 #publications-title { margin-bottom: 8px; }
 #publications > .contribution { margin-bottom: 22px; }
-.publication .publication-links { margin-top: 14px; font-size: .875rem; }
+.publication .publication-links { margin-top: 2px; font-size: .875rem; }
 .publication-links a { color: var(--blue); }
 .paper-pending { color: var(--muted); font-size: .8rem; }
 .education-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
