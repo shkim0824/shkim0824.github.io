@@ -15,9 +15,7 @@ a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: .
 a:hover { text-decoration: underline; }
 a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; border-radius: 2px; }
 .page { max-width: 1040px; margin: 0 auto; padding: 0 52px; }
-.site-header { min-height: 113px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); gap: 20px; }
-.wordmark { font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; font-weight: 700; letter-spacing: -.08em; text-decoration: none; color: var(--ink); }
-.wordmark span { color: var(--blue); }
+.site-header { min-height: 113px; display: flex; align-items: center; justify-content: flex-end; border-bottom: 1px solid var(--line); gap: 20px; }
 nav { display: flex; gap: 30px; flex-wrap: wrap; }
 nav a { font-size: .9rem; color: var(--muted); text-decoration: none; }
 .layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 68px; padding: 65px 0 88px; }
@@ -41,6 +39,10 @@ strong { font-weight: 600; }
 .venue { color: var(--blue); font-size: .9rem; }
 .venue span, .contribution { color: var(--muted); }
 .contribution { font-size: .8rem; }
+.publication .publication-links { margin-top: 14px; font-size: .875rem; }
+.publication-links a { color: var(--blue); }
+.paper-pending { color: var(--muted); }
+.paper-pending span { font-size: .8rem; }
 .education-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
 h3 { font-size: 1rem; font-weight: 600; margin: 0; }
 .education-row p, .secondary { color: var(--muted); font-size: .9rem; }
