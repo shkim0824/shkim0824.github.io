@@ -37,12 +37,11 @@ strong { font-weight: 600; }
 .publication p { margin: 0 0 9px; }
 .authors { font-size: .9rem; line-height: 1.8; }
 .venue { color: var(--blue); font-size: .9rem; }
-.venue span, .contribution { color: var(--muted); }
+.contribution { color: var(--muted); }
 .contribution { font-size: .8rem; }
 .publication .publication-links { margin-top: 14px; font-size: .875rem; }
 .publication-links a { color: var(--blue); }
-.paper-pending { color: var(--muted); }
-.paper-pending span { font-size: .8rem; }
+.paper-pending { color: var(--muted); font-size: .8rem; }
 .education-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
 h3 { font-size: 1rem; font-weight: 600; margin: 0; }
 .education-row p, .secondary { color: var(--muted); font-size: .9rem; }
