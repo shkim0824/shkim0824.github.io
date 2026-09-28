@@ -39,6 +39,8 @@ strong { font-weight: 600; }
 .venue { color: var(--blue); font-size: .9rem; }
 .contribution { color: var(--muted); }
 .contribution { font-size: .8rem; }
+#publications-title { margin-bottom: 8px; }
+#publications > .contribution { margin-bottom: 22px; }
 .publication .publication-links { margin-top: 14px; font-size: .875rem; }
 .publication-links a { color: var(--blue); }
 .paper-pending { color: var(--muted); font-size: .8rem; }
