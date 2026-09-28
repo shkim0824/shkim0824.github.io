@@ -34,6 +34,7 @@ p { margin: 0 0 16px; }
 p:last-child { margin-bottom: 0; }
 strong { font-weight: 600; }
 .publication h3 { line-height: 1.55; margin-bottom: 12px; }
+.publication + .publication { margin-top: 30px; }
 .publication p { margin: 0 0 9px; }
 .authors { font-size: .9rem; line-height: 1.8; }
 .venue { color: var(--blue); font-size: .9rem; }
