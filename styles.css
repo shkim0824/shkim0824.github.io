@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light;
+  --ink: #222a35;
+  --muted: #626c79;
+  --blue: #1d4075;
+  --line: #e3e7ec;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  background: #fff;
+  color: var(--ink);
+}
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.8; }
+a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: .22em; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; border-radius: 2px; }
+.page { max-width: 1040px; margin: 0 auto; padding: 0 52px; }
+.site-header { min-height: 113px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); gap: 20px; }
+.wordmark { font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; font-weight: 700; letter-spacing: -.08em; text-decoration: none; color: var(--ink); }
+.wordmark span { color: var(--blue); }
+nav { display: flex; gap: 30px; flex-wrap: wrap; }
+nav a { font-size: .9rem; color: var(--muted); text-decoration: none; }
+.layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 68px; padding: 65px 0 88px; }
+.profile-rule { width: 32px; height: 3px; background: var(--blue); margin: 6px 0 24px; }
+h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.65rem; font-weight: 400; letter-spacing: -.045em; line-height: 1.13; margin: 0; }
+.korean-name { margin: 15px 0 23px; font-size: 1rem; color: var(--muted); }
+.role { margin: 0 0 23px; line-height: 1.75; }
+.role a { text-decoration: none; }
+.email { font-size: .875rem; text-decoration: none; overflow-wrap: anywhere; }
+.social-links { margin: 10px 0 0; font-size: .875rem; }
+.social-links a { text-decoration: none; }
+section { scroll-margin-top: 28px; }
+section + section { margin-top: 42px; }
+h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; font-weight: 400; line-height: 1.3; margin: 0 0 22px; letter-spacing: -.02em; }
+p { margin: 0 0 16px; }
+p:last-child { margin-bottom: 0; }
+strong { font-weight: 600; }
+.publication h3 { line-height: 1.55; margin-bottom: 12px; }
+.publication p { margin: 0 0 9px; }
+.authors { font-size: .9rem; line-height: 1.8; }
+.venue { color: var(--blue); font-size: .9rem; }
+.venue span, .contribution { color: var(--muted); }
+.contribution { font-size: .8rem; }
+.education-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+.education-row p, .secondary { color: var(--muted); font-size: .9rem; }
+footer { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 23px 0 30px; color: var(--muted); font-size: .8rem; }
+footer a { text-decoration: none; }
+.skip-link { position: absolute; top: -100px; left: 16px; padding: 8px 16px; background: white; z-index: 2; }
+.skip-link:focus { top: 10px; }
+@media (max-width: 760px) {
+  .page { padding: 0 25px; }
+  .site-header { min-height: 88px; }
+  nav { gap: 20px; }
+  .layout { grid-template-columns: 1fr; gap: 46px; padding: 40px 0 56px; }
+  h1 br { display: none; }
+  h1 { max-width: 100%; font-size: 2.4rem; }
+  .korean-name { margin: 12px 0 16px; }
+  .profile-rule { margin-bottom: 20px; }
+  .role { margin-bottom: 12px; }
+}
+@media (max-width: 380px) {
+  .page { padding: 0 20px; }
+  nav { gap: 14px; }
+  h1 { font-size: 2rem; }
+  .education-row { flex-wrap: wrap; gap: 4px; }
+}
+@media print {
+  .page { max-width: none; padding: 0; }
+  .site-header, footer, .skip-link { display: none; }
+  .layout { padding: 0; gap: 32px; grid-template-columns: 210px 1fr; }
+  a { color: inherit; }
+}
