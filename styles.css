@@ -46,6 +46,8 @@ strong { font-weight: 600; }
 .publication-links a { color: var(--blue); }
 .paper-pending { color: var(--muted); font-size: .8rem; }
 .education-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.education-row + .education-row { margin-top: 20px; }
+.education-row .secondary { flex-shrink: 0; }
 h3 { font-size: 1rem; font-weight: 600; margin: 0; }
 .education-row p, .secondary { color: var(--muted); font-size: .9rem; }
 footer { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 23px 0 30px; color: var(--muted); font-size: .8rem; }
@@ -58,6 +60,9 @@ footer a { text-decoration: none; }
   nav { gap: 20px; }
   .layout { padding: 36px 0 56px; }
   h1 { max-width: 100%; font-size: 2.4rem; }
+}
+@media (max-width: 540px) {
+  .education-row { flex-direction: column; gap: 4px; }
 }
 @media (max-width: 380px) {
   .page { padding: 0 20px; }
